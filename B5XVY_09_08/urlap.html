@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Ürlap</title>
+</head>
+<body>
+    <form action="feldolgozo.php" method="post">
+        <div>
+            <label>Név: </label>
+            <input type="text" placeholder="Írd be a neved" name="nev">
+        </div>
+
+        <div>
+            <label>PIN kód: </label>
+            <input type="text" placeholder="Írd be a PIN kódod" name="kod">
+        </div>
+
+        <div>
+            <label>Kedvenc gyümölcs: </label>
+            <input type="text" value="dinnye" name="gyumolcs">
+        </div>
+
+        <div>
+            <label >Életkor: </label>
+            <input type="text" value="10" name="eletkor">
+        </div>
+
+        <div>
+            <label >Lábméret: </label>
+            <input type="text" value="32" name="labmeret">
+        </div>
+
+        <div>
+            <label >Önbizalom: </label>
+            <input type="range" name="onbizalom" min="0" max="100" value="50">
+        </div>
+    
+        <input type="submit" value="ELKÜLDÖM">
+    </form>
+</body>
+</html>

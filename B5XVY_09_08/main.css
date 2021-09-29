@@ -1,0 +1,17 @@
+html, body{
+    font-size: 16pt;
+    background-color: rgb(59, 121, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    margin: 15px;
+    padding: 5px;
+}
