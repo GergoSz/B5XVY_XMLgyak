@@ -1,0 +1,11 @@
+<!DOCTYPE dolgozo [
+<!ELEMENT dolgozo (nev,fizetes)>
+<!ATTLIST dolgozo kod ID #REQUIRED>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT fizetes (#PCDATA)>
+]>
+
+<dolgozo kod="x01">
+    <nev></nev>
+    <fizetes></fizetes>
+</dolgozo>
