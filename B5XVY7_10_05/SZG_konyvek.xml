@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<!DOCTYPE konyvek SYSTEM "B5XVY7_konyv.dtd">-->
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="SZG_konyvek.xsd">
+    <konyv id="x1">
+        <cim>Applied Probability</cim>
+        <kiadasi_ev>2000</kiadasi_ev>
+        <kiado>Connexions</kiado>
+        <szerzo>
+            Paul E Pfeiffer
+        </szerzo>
+    </konyv>
+    <konyv id="x2">
+        <cim>Introduction to Probability</cim>
+        <kiadasi_ev>1997</kiadasi_ev>
+        <kiado>American Mathematical Society</kiado>
+        <szerzo>
+            J. Laurie Snell
+        </szerzo>
+        <szerzo>
+            Charles M. Grinstead
+        </szerzo>
+    </konyv>
+</konyvek>
