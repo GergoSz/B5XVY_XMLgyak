@@ -1,5 +1,5 @@
 <!ELEMENT konyvek (konyv*)>
-<!ELEMENT konyv (cim, kiadasi_ev,kiado,szerzo+,abstract*)>
+<!ELEMENT konyv (cim, kiadasi_ev,kiado,szerzo+,abstract?)>
 <!ATTLIST konyv id ID #REQUIRED>
 <!ELEMENT cim (#PCDATA)>
 <!ELEMENT kiadasi_ev (#PCDATA)>
