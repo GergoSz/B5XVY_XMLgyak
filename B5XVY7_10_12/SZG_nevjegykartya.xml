@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nevjegyek>
+    <nevjegykartya>
+        <nev>Szabó Gergely</nev>
+        <ceg>
+            <nev>Robert Bosch Energy and Body Systems Kft</nev>
+            <cim>
+                <iranyitoszam>3526</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Robert Bosch park</utca>
+                <hazszam>3</hazszam>
+            </cim>
+            <telefonszam>(06 1) 879 9889</telefonszam>
+            <weblap>https://www.bosch.hu</weblap>
+        </ceg>
+        <beosztas>Programozó</beosztas>
+        <telefonszam>0256542555</telefonszam>
+        <email>afadf.afdf@gmail.com</email>
+    </nevjegykartya>
+
+    <nevjegykartya>
+        <nev>Dr. Kovács László</nev>
+        <ceg>
+            <cim>
+                <iranyitoszam>3515</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Egyetem út</utca>
+                <hazszam>1</hazszam>
+            </cim>
+            <telefonszam>+36 46 565 111 #2958</telefonszam>
+            <weblap>https://www.iit.uni-miskolc.hu</weblap>
+        </ceg>
+        <beosztas>Tanszékvezető, egyetemi tanár</beosztas>
+        <telefonszam>+36 46 565 111 #2108</telefonszam>
+        <email>kovacslaszlo@iit.uni-miskolc.hu</email>
+    </nevjegykartya>
+</nevjegyek>
