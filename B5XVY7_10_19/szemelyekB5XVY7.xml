@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<szemelyek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="szemelyekB5XVY7.xsd">
+
+
+    <szemely id="01">
+        <nev>Szabo Gergely</nev>
+        <kor>22</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+
+    <szemely id="02">
+        <nev>Nev Ketto</nev>
+        <kor>25</kor>
+        <varos>Sajooros</varos>
+    </szemely>
+
+    <szemely id="01">
+        <nev>Nem En</nev>
+        <kor>36</kor>
+        <varos>Sajoszoged</varos>
+    </szemely>
+
+</szemelyek>
