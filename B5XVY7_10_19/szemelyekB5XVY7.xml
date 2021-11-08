@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<szemelyek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="szemelyekB5XVY7.xsd">
 
+<szemelyek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="szemelyekB5XVY7.xsd">
+
+<?xml-model href="szemelyekB5XVY7.dtd" type="application/xml-dtd"?>
 
     <szemely id="01">
         <nev>Szabo Gergely</nev>

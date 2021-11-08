@@ -11,9 +11,9 @@
 
   <xs:complexType name="szemely">
     <xs:sequence>
-      <xs:element type="xs:string" name="varos"/>
-      <xs:element type="xs:string" name="kor"/>
       <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="kor"/>
+      <xs:element type="xs:string" name="varos"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="id" use="required"/>
   </xs:complexType>
