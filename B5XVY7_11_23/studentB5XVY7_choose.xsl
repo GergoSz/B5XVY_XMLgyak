@@ -10,6 +10,7 @@
                         <td>Keresztnév</td>
                         <td>Becenév</td>
                         <td>Kor</td>
+                        <td>Fizetés</td>
                     </tr>
                     <xsl:for-each select="class/student">
                         <tr>
@@ -17,6 +18,7 @@
                             <td><xsl:value-of select="keresztnev"/></td>
                             <td><xsl:value-of select="becenev"/></td>
                             <td><xsl:value-of select="kor"/></td>
+                            <td><xsl:value-of select="fizetes"/></td>
                             <xsl:choose>
                                 <xsl:when test="fizetes &gt; 1000000">
                                     <td bgcolor="#ff00ff">Magas<xsl:value-of select="artist"/></td>
