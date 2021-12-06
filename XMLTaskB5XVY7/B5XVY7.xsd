@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="lakcim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="varos" type="xs:string"/>
+        <xs:element name="utca" type="xs:string"/>
+        <xs:element name="hazszam" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nev" type="xs:string"/>
+        <xs:element name="beosztas" type="xs:string"/>
+        <xs:element ref="lakcim"/>
+      </xs:sequence>
+      <xs:attribute type="xs:int" name="szemszam" use="required"/>
+      <xs:attribute type="xs:int" name="eszkoz" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PekPekseg">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:int" name="pekszemszam" use="required"/>
+          <xs:attribute type="xs:string" name="peksegnev" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pekseg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pcim" type="xs:string"/>
+        <xs:element name="nyitas" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="pnev" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  
+  <xs:element name="Eszkoz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eszkoznev" type="xs:string"/>
+        <xs:element name="allapot" type="xs:boolean"/>
+      </xs:sequence>
+      <xs:attribute type="xs:int" name="eszkozazon" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Vevo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fizetett" type="xs:short"/>
+        <xs:element name="kiszolgalta" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute type="xs:int" name="vevoszam" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="VevoTermek">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:int" name="vevoszam" use="required"/>
+          <xs:attribute type="xs:int" name="tkod" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Termek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="termeknev" type="xs:string"/>
+        <xs:element name="sosedes" type="xs:int"/>
+        <xs:element name="kesitesideje" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute type="xs:int" name="tkod" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Vegzettseg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="megnevezes" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PekVegzettse">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:int" name="szemszam" use="required"/>
+          <xs:attribute type="xs:string" name="vegID" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pekek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Pek" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PekPeksegek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PekPekseg" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Peksegek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Pekseg" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eszkozok">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Eszkoz" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vevok">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Vevo" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VevoTermekek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="VevoTermek" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Termekek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Termek" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vegzettsegek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Vegzettseg" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PekVegzettsegek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PekVegzettse" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Pekek"/>
+        <xs:element ref="PekPeksegek"/>
+        <xs:element ref="Peksegek"/>
+        <xs:element ref="Eszkozok"/>
+        <xs:element ref="Vevok"/>
+        <xs:element ref="VevoTermekek"/>
+        <xs:element ref="Termekek"/>
+        <xs:element ref="Vegzettsegek"/>
+        <xs:element ref="PekVegzettsegek"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

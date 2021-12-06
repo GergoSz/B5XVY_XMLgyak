@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="B5XVY7.xsd">
+    
+    <Pekek>
+        <Pek szemszam="12345" eszkoz="00">
+            <nev>Amal</nev>
+            <beosztas>Főpék</beosztas>
+            <lakcim>
+                <varos>Miskolc</varos>
+                <utca>Eper</utca>
+                <hazszam>2</hazszam>
+            </lakcim>
+        </Pek>
+        <Pek szemszam="23456" eszkoz="05">
+            <nev>Darius</nev>
+            <beosztas>Cukrász</beosztas>
+            <lakcim>
+                <varos>Tiszaújváros</varos>
+                <utca>Kossuth</utca>
+                <hazszam>4</hazszam>
+            </lakcim>
+        </Pek>
+        <Pek szemszam="34567" eszkoz="02">
+            <nev>Benedict</nev>
+            <beosztas>Pék</beosztas>
+            <lakcim>
+                <varos>Eger</varos>
+                <utca>Weöres</utca>
+                <hazszam>78</hazszam>
+            </lakcim>
+        </Pek>
+        <Pek szemszam="45678" eszkoz="03">
+            <nev>Barbara</nev>
+            <beosztas>Cukrász</beosztas>
+            <lakcim>
+                <varos>Sátoraljaújhely</varos>
+                <utca>Deák</utca>
+                <hazszam>12</hazszam>
+            </lakcim>
+        </Pek>
+    </Pekek>
+
+    <PekPeksegek>
+        <PekPekseg pekszemszam="45678" peksegnev="pekseg3" />
+        <PekPekseg pekszemszam="34567" peksegnev="pekseg1" />
+        <PekPekseg pekszemszam="23456" peksegnev="pekseg2" />
+        <PekPekseg pekszemszam="12345" peksegnev="pekseg1" />
+        <PekPekseg pekszemszam="23456" peksegnev="pekseg4" />
+
+    </PekPeksegek>
+
+    <Peksegek>
+        <Pekseg pnev="pekseg1">
+            <pcim>Kenyéten Hold utca 3</pcim>
+            <nyitas>2008-02-07 07:56:12</nyitas>
+        </Pekseg>
+        <Pekseg pnev="pekseg2">
+            <pcim>Eger Bartók Béla út 15/B</pcim>
+            <nyitas>2018-09-21 08:05:08</nyitas>
+        </Pekseg>
+        <Pekseg pnev="pekseg3">
+            <pcim>Miskolc Eper utca 3</pcim>
+            <nyitas>2010-12-17 16:18:34</nyitas>
+        </Pekseg>
+        <Pekseg pnev="pekseg4">
+            <pcim>Miskolc Ifjuság utca 5</pcim>
+            <nyitas>2001-09-08 01:51:25</nyitas>
+        </Pekseg>
+    </Peksegek>
+    
+    <Eszkozok>
+        <Eszkoz eszkozazon="00">
+            <eszkoznev>Munkaasztallap</eszkoznev>
+            <allapot>1</allapot>
+        </Eszkoz>
+        <Eszkoz eszkozazon="01">
+            <eszkoznev>Szakajtó</eszkoznev>
+            <allapot>0</allapot>
+        </Eszkoz>
+        <Eszkoz eszkozazon="02">
+            <eszkoznev>Kuglófforma</eszkoznev>
+            <allapot>1</allapot>
+        </Eszkoz>
+        <Eszkoz eszkozazon="03">
+            <eszkoznev>Péklapát</eszkoznev>
+            <allapot>0</allapot>
+        </Eszkoz>
+        <Eszkoz eszkozazon="04">
+            <eszkoznev>Nyujtófa</eszkoznev>
+            <allapot>1</allapot>
+        </Eszkoz>
+        <Eszkoz eszkozazon="05">
+            <eszkoznev>Péklapát</eszkoznev>
+            <allapot>1</allapot>
+        </Eszkoz>
+    </Eszkozok>
+
+    <Vevok>
+        <Vevo vevoszam="00">
+            <fizetett>1200</fizetett>
+            <kiszolgalta>Barbara</kiszolgalta>
+        </Vevo>
+        <Vevo vevoszam="01">
+            <fizetett>2400</fizetett>
+            <kiszolgalta>Amal</kiszolgalta>
+        </Vevo>
+        <Vevo vevoszam="02">
+            <fizetett>5000</fizetett>
+            <kiszolgalta>Darius</kiszolgalta>
+        </Vevo>
+        <Vevo vevoszam="03">
+            <fizetett>200</fizetett>
+            <kiszolgalta>Barbara</kiszolgalta>
+        </Vevo>
+    </Vevok>
+
+    <VevoTermekek>
+        <VevoTermek vevoszam="03" tkod="03" />
+        <VevoTermek vevoszam="03" tkod="03" />
+        <VevoTermek vevoszam="03" tkod="03" />
+        <VevoTermek vevoszam="03" tkod="03" />
+        <VevoTermek vevoszam="02" tkod="02" />
+        <VevoTermek vevoszam="01" tkod="00" />
+        <VevoTermek vevoszam="01" tkod="01" />
+        <VevoTermek vevoszam="01" tkod="00" />
+        <VevoTermek vevoszam="00" tkod="01" />
+
+    </VevoTermekek>
+
+    <Termekek>
+        <Termek tkod="00">
+            <termeknev>Kuglóf</termeknev>
+            <sosedes>1</sosedes>
+            <kesitesideje>22/Nov/2021</kesitesideje>
+        </Termek>
+        <Termek tkod="01">
+            <termeknev>Kenyér</termeknev>
+            <sosedes>0</sosedes>
+            <kesitesideje>23/Nov/2021</kesitesideje>
+        </Termek>
+        <Termek tkod="02">
+            <termeknev>Torta</termeknev>
+            <sosedes>1</sosedes>
+            <kesitesideje>23/Nov/2021</kesitesideje>
+        </Termek>
+        <Termek tkod="03">
+            <termeknev>Zsemle</termeknev>
+            <sosedes>0</sosedes>
+            <kesitesideje>22/Nov/2021</kesitesideje>
+        </Termek>
+    </Termekek>
+
+    <Vegzettsegek>
+        <Vegzettseg ID="veg1">
+            <megnevezes>Pék</megnevezes>
+        </Vegzettseg>
+        <Vegzettseg ID="veg2">
+            <megnevezes>Cukrász</megnevezes>
+        </Vegzettseg>
+        <Vegzettseg ID="veg3">
+            <megnevezes>Eladó</megnevezes>
+        </Vegzettseg>
+        <Vegzettseg ID="veg4">
+            <megnevezes>Boltvezető</megnevezes>
+        </Vegzettseg>
+    </Vegzettsegek>
+
+    <PekVegzettsegek>
+        <PekVegzettse szemszam="12345" vegID="veg1" />        
+        <PekVegzettse szemszam="12345" vegID="veg1" />
+        <PekVegzettse szemszam="12345" vegID="veg4" />
+        <PekVegzettse szemszam="23456" vegID="veg2" />
+        <PekVegzettse szemszam="23456" vegID="veg3" />
+        <PekVegzettse szemszam="34567" vegID="veg1" />
+        <PekVegzettse szemszam="45678" vegID="veg2" />
+        <PekVegzettse szemszam="45678" vegID="veg3" />
+
+    </PekVegzettsegek>
+
+</root>
