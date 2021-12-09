@@ -107,6 +107,17 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:element name="PekTermek">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:int" name="szemszam" use="required"/>
+          <xs:attribute type="xs:string" name="tkod" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="Pekek">
     <xs:complexType>
       <xs:sequence>
@@ -170,6 +181,13 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="PekTermekek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PekTermek" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="root">
     <xs:complexType>
       <xs:sequence>
@@ -182,7 +200,68 @@
         <xs:element ref="Termekek"/>
         <xs:element ref="Vegzettsegek"/>
         <xs:element ref="PekVegzettsegek"/>
+        <xs:element ref="PekTermekek"/>
       </xs:sequence>
     </xs:complexType>
+    <xs:key name="szemszam">
+      <xs:selector xpath="Pek"/>
+      <xs:field xpath="@szemszam"/>
+    </xs:key>
+    <xs:key name="pnev">
+      <xs:selector xpath="Pekseg"/>
+      <xs:field xpath="@pnev"/>
+    </xs:key>
+    <xs:key name="eszkozazon">
+      <xs:selector xpath="Eszkoz"/>
+      <xs:field xpath="@eszkozazon"/>
+    </xs:key>
+    <xs:key name="vevoszam">
+      <xs:selector xpath="Vevo"/>
+      <xs:field xpath="@vevoszam"/>
+    </xs:key>
+    <xs:key name="tkod">
+      <xs:selector xpath="Termek"/>
+      <xs:field xpath="@tkod"/>
+    </xs:key>
+    <xs:key name="ID">
+      <xs:selector xpath="Vevo"/>
+      <xs:field xpath="@ID"/>
+    </xs:key>
+    <xs:keyref name="eszkoz" refer="eszkozazon">
+      <xs:selector xpath="Pek"/>
+      <xs:field xpath="@eszkoz"/>
+    </xs:keyref>
+    <xs:keyref name="pekszemszam" refer="szemszam">
+      <xs:selector xpath="PekPekseg"/>
+      <xs:field xpath="@szemszam"/>
+    </xs:keyref>
+    <xs:keyref name="peksegnev" refer="pnev">
+      <xs:selector xpath="PekPekseg"/>
+      <xs:field xpath="@pnev"/>
+    </xs:keyref>
+    <xs:keyref name="fkvevoszam" refer="vevoszam">
+      <xs:selector xpath="VevoTermek"/>
+      <xs:field xpath="@vevoszam"/>
+    </xs:keyref>
+    <xs:keyref name="fktkod" refer="tkod">
+      <xs:selector xpath="VevoTermek"/>
+      <xs:field xpath="@tkod"/>
+    </xs:keyref>
+    <xs:keyref name="fkvegzettsegszemszam" refer="szemszam">
+      <xs:selector xpath="PekVegzettse"/>
+      <xs:field xpath="@szemszam"/>
+    </xs:keyref>
+    <xs:keyref name="vegID" refer="ID">
+      <xs:selector xpath="PekVegzettse"/>
+      <xs:field xpath="@ID"/>
+    </xs:keyref>
+    <xs:keyref name="fkszemszam" refer="szemszam">
+      <xs:selector xpath="PekTermek"/>
+      <xs:field xpath="@szemszam"/>
+    </xs:keyref>
+    <xs:keyref name="fkpektermektkod" refer="tkod">
+      <xs:selector xpath="PekTermek"/>
+      <xs:field xpath="@tkod"/>
+    </xs:keyref>
   </xs:element>
 </xs:schema>

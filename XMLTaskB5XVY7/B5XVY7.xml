@@ -166,7 +166,8 @@
     </Vegzettsegek>
 
     <PekVegzettsegek>
-        <PekVegzettse szemszam="12345" vegID="veg1" />        <PekVegzettse szemszam="12345" vegID="veg1" />
+        <PekVegzettse szemszam="12345" vegID="veg1" />        
+        <PekVegzettse szemszam="12345" vegID="veg1" />
         <PekVegzettse szemszam="12345" vegID="veg4" />
         <PekVegzettse szemszam="23456" vegID="veg2" />
         <PekVegzettse szemszam="23456" vegID="veg3" />
@@ -175,5 +176,16 @@
         <PekVegzettse szemszam="45678" vegID="veg3" />
 
     </PekVegzettsegek>
+
+    <PekTermekek>
+        
+        <PekTermek szemszam="12345" tkod="00" />
+        <PekTermek szemszam="23456" tkod="03" />
+        <PekTermek szemszam="23456" tkod="02" />
+        <PekTermek szemszam="34567" tkod="03" />
+        <PekTermek szemszam="45678" tkod="00" />
+        <PekTermek szemszam="45678" tkod="01" />
+
+    </PekTermekek>
 
 </root>
